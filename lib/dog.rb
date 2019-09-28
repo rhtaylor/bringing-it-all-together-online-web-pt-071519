@@ -69,7 +69,7 @@ class Dog
     SELECT * FROM dogs WHERE name = ? AND breed = ?
     NEWNEW
     dog = DB[:conn].execute(sql, name, breed)
-
+    binding.pry
     if dog
       id = dog[0][0]
       self.find_by_id(id)
