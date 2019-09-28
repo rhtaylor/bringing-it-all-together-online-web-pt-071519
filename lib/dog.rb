@@ -70,7 +70,7 @@ class Dog
     NEWNEW
     dog = DB[:conn].execute(sql, name, breed)
     binding.pry
-    if dog
+    if !(dog.count = 0)
       id = dog[0][0]
       self.find_by_id(id)
     else
