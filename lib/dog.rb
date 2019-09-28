@@ -83,7 +83,7 @@ end
     SELECT * FROM dogs WHERE name = ?
     NEWNEW
     dog = DB[:conn].execute(sql, name)[0]
-    binding.pry
+    
     self.new_from_db(dog)
   end
 end
