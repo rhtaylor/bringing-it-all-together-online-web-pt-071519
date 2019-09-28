@@ -78,7 +78,7 @@ class Dog
   end
 end
   def self.find_by_name(name)
-    binding.pry
+    
     sql = <<-NEWNEW
     SELECT * FROM dogs WHERE name = ?
     NEWNEW
