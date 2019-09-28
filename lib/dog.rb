@@ -66,9 +66,9 @@ class Dog
     name = arg[:name]
     breed = arg[:breed]
     sql = <<-NEWNEW
-    SELECT * FROM dogs WHERE name = ?
+    SELECT * FROM dogs WHERE name = ? , breed = ?
     NEWNEW
-    dog = DB[:conn].execute(sql, name)
+    dog = DB[:conn].execute(sql, name, breed)
 
     if dog
       id = dog[0][0]
