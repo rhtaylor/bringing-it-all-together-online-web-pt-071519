@@ -82,7 +82,7 @@ end
     sql = <<-NEWNEW
     SELECT * FROM dogs WHERE name = ?
     NEWNEW
-    dog = DB[:conn].execute(sql, name) 
+    dog = DB[:conn].execute(sql, name)
     binding.pry
     self.new_from_db(dog)
   end
