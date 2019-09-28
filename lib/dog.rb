@@ -74,7 +74,7 @@ class Dog
       id = dog[0][0]
       self.find_by_id(id)
     else
-      self.create(arg[:name], arg[:breed])
+      self.create(name:, breed:)
   end
 end
 end
