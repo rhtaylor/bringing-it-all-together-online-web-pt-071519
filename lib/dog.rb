@@ -80,8 +80,8 @@ end
   def self.find_by_name(arg)
     binding.pry
     sql = <<-NEWNEW
-    SELECT * FROM dogs WHERE name = ? 
+    SELECT * FROM dogs WHERE name = ?
     NEWNEW
     dog = DB[:conn].execute(sql, name)
-  end  
+  end
 end
